@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Joel Conley">
+    <meta name="created" content="Thu, 09 Jul 2020">
+    <meta name="updated" content="Mon, 13 Jul 2020">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="language" content="en" />
+    <meta name="description" content="An Athabasca University student web 
+    development project">
+    <meta name="keywords" content="university, school, computer, programming,
+    web" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type=text/css href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link rel="icon" href="images/monster_m.png" type="image/gif" sizes="16x16">
+    <title>My Courses</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <span class="top">
+                <a href="index.html">
+                    <img class="logo" alt="Monstersorri University logo" src="images/monster_m.png" width="75" height="75">
+                </a>            
+            </span>
+            <span class="top">
+                <ul class="navbar" id="navlist">
+                    <li>
+                            <a href="programs_courses.html#programs_and_courses">Programs & 
+                                Courses</a>
+                    </li>
+                    <li>                    
+                            <a href="my_courses.html#calendar">My Courses</a>
+                    </li>
+                    <li>
+                            <a href="register.html#register">Register for Courses</a>
+                    </li>
+                    <li>
+                            <a href="mailto:jconl266@mtroyal.ca?subject=Student Advising - Monstersorri University">Contact</a>
+                    </li>
+                    <form>
+                        <input id="student_id" name="Student ID" type="text" placeholder="Student ID" />
+                        <input id="student_password" type="password" name="Student 
+                        Password" placeholder="Password" />
+                        <input id="login_btn" type="button" onclick="login()" value="Login" />
+                    </form>
+                </ul>
+            </span>
+        </div>
+        <div class="banner">
+            <img alt="Welcome to Monstersorri University! Explore your 
+                future!" src="images/banner.png" class="banner" />
+        </div>
+    </header>
+    <h2 id="calendar">Course Schedule</h2>
+    <table class="schedule">
+        <thead>
+            <tr>
+                <th></th>
+                <th class="day Monday">Monday</th>
+                <th class="day Tuesday">Tuesday</th>
+                <th class="day Wednesday">Wednesday</th>
+                <th class="day Thursday">Thursday</th>
+                <th class="day Friday">Friday</th>
+            </tr>
+        </thead>
+        <!--Data to be added using user database and javascript-->
+        <tbody>
+            <tr>
+                <td class="time">9:00</td>
+                <td class="course_data" id="M900"></td>
+                <td class="course_data" id="Tu900"></td>
+                <td class="course_data" id="W900"></td>
+                <td class="course_data" id="Th900"></td>
+                <td class="course_data" id="F900"></td>
+            </tr>
+            <tr>
+                <td class="time">10:00</td>
+                <td class="course_data" id="M1000"></td>
+                <td class="course_data" id="Tu1000"></td>
+                <td class="course_data" id="W1000"></td>
+                <td class="course_data" id="Th1000"></td>
+                <td class="course_data" id="F1000"></td>
+            </tr>
+            <tr>
+                <td class="time">11:00</td>
+                <td class="course_data" id="M1100"></td>
+                <td class="course_data" id="Tu1100"></td>
+                <td class="course_data" id="W1100"></td>
+                <td class="course_data" id="Th1100"></td>
+                <td class="course_data" id="F1100"></td>
+            </tr>
+            <tr>
+                <td class="time">12:00</td>
+                <td class="course_data" id="M1200"></td>
+                <td class="course_data" id="Tu1200"></td>
+                <td class="course_data" id="W1200"></td>
+                <td class="course_data" id="Th1200"></td>
+                <td class="course_data" id="F1200"></td>
+            </tr>
+            <tr>
+                <td class="time">13:00</td>
+                <td class="course_data" id="M1300"></td>
+                <td class="course_data" id="Tu1300"></td>
+                <td class="course_data" id="W1300"></td>
+                <td class="course_data" id="Th1300"></td>
+                <td class="course_data" id="F1300"></td>
+            </tr>
+            <tr>
+                <td class="time">14:00</td>
+                <td class="course_data" id="M1400"></td>
+                <td class="course_data" id="Tu1400"></td>
+                <td class="course_data" id="W1400"></td>
+                <td class="course_data" id="Th1400"></td>
+                <td class="course_data" id="F1400"></td>
+            </tr>
+            <tr>
+                <td class="time">15:00</td>
+                <td class="course_data" id="M1500"></td>
+                <td class="course_data" id="Tu1500"></td>
+                <td class="course_data" id="W1500"></td>
+                <td class="course_data" id="Th1500"></td>
+                <td class="course_data" id="F1500"></td>
+            </tr>
+            <tr>
+                <td class="time">16:00</td>
+                <td class="course_data" id="M1600"></td>
+                <td class="course_data" id="Tu1600"></td>
+                <td class="course_data" id="W1600"></td>
+                <td class="course_data" id="Th1600"></td>
+                <td class="course_data" id="F1600"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</html>

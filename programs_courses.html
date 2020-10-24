@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Joel Conley">
+    <meta name="created" content="Thu, 09 Jul 2020">
+    <meta name="updated" content="Mon, 13 Jul 2020">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="language" content="en" />
+    <meta name="description" content="An Athabasca University student web 
+    development project">
+    <meta name="keywords" content="university, school, computer, programming,
+    web" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type=text/css href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link rel="icon" href="images/monster_m.png" type="image/gif" sizes="16x16">
+    <title>Programs & Courses</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <span class="top">
+                <a href="index.html">
+                    <img class="logo" alt="Monstersorri University logo" src="images/monster_m.png" width="75" height="75">
+                </a>            
+            </span>
+            <span class="top">
+                <ul class="navbar" id="navlist">
+                    <li>
+                            <a href="programs_courses.html#programs_and_courses">Programs & 
+                            Courses</a>
+                    </li>
+                    <li>
+                            <a href="my_courses.html#calendar">My Courses</a>
+                    </li>
+                    <li>
+                            <a href="register.html#register">Register for Courses</a>
+                    </li>
+                    <li>
+                            <a href="mailto:jconl266@mtroyal.ca?subject=Student Advising - Monstersorri University">Contact</a>
+                    </li>
+                    <form>
+                        <input id="student_id" name="Student ID" type="text" placeholder="Student ID" />
+                        <input id="student_password" type="password" name="Student 
+                        Password" placeholder="Password" />
+                        <input id="login_btn" type="button" onclick="login()" value="Login" />
+                    </form>
+                </ul>
+            </span>
+        </div>
+        <div class="banner">
+            <img alt="Welcome to Monstersorri University! Explore your 
+                future!" src="images/banner.png" class="banner" />
+        </div>
+    </header>
+    <h2 id="programs_and_courses">Programs</h2>
+    <ul id="programs">
+        <li>
+            Bachelor of Computer Information Systems <a href="program_tree.html">Program Tree</a>
+        </li>
+        <hr>
+        <li>
+            Bachelor of Philosophy <a href="program_tree.html">Program Tree (coming soon)</a>
+        </li>
+        <hr>
+        <li>
+            Bachelor of Science <a href="program_tree.html">Program Tree (coming soon)</a>
+        </li>
+        <hr>
+    </ul>
+    <h2>Courses</h2>
+    <!--"Expand" and"Collapse" functionality will be added using javascript-->
+    <ul id="courses">
+        <li>
+            COMP 1501 - Programming I
+            <span class="expand">Expand</span>
+            <div class="course_info">
+                <p class="sched_type"> Schedule Type: <strong>Lecture</strong></p>
+                <!--course synopsis from Mount Royal University-->
+                <p class="synopsis">
+                    This course provides an introduction to problem solving in the context of computer programming. The problem solving process is explored in depth, with a focus on applying the key steps in a variety of situations. The course emphasizes the design of fundamental
+                    algorithmic solutions and the implementation of those solutions in a visual development environment. Preexisting modular building blocks for objects and methods form the basis for program implementation.
+                </p>
+                <p class="register"><a href="register.html#register">Register</a></p>
+                <p class="prereq"><em>Prerequisite(s):</em> none</p>
+            </div>
+        </li>
+
+        <hr>
+        <li>
+            COMP 2511 - Web Development I
+            <span class="expand">Expand</span>
+            <div class="course_info">
+                <p class="sched_type"> Schedule Type: <strong>Lecture</strong></p>
+                <!--course synopsis from Mount Royal University-->
+                <p class="synopsis">
+                    This course covers the concepts and practice necessary for creating Internet content. The course provides a technical overview of the Internet environment and the structure of the World Wide Web. The technical segment will focus on the design and implementation
+                    of an effective web site at the introductory level.
+                </p>
+                <p class="register"><a href="register.html#register">Register</a></p>
+                <p class="prereq">
+                    <em>Prerequisite(s):</em> COMP 1001 or COMP 1501 or COMP 1615 or COMP 1631 or COMP 2001
+                </p>
+            </div>
+        </li>
+
+        <hr>
+        <li>
+            COMP 3309 - Information Technology & Society
+            <span class="expand">Expand</span>
+            <div class="course_info">
+                <p class="sched_type"> Schedule Type: <strong>Lecture</strong></p>
+                <p class="synopsis">
+                    A study of the implications of information technology for society. Historical perspectives, social context of computing, legal and ethical problems, economic issues, and philosophical frameworks for analysis will be covered.
+                </p>
+                <!--course synopsis from Mount Royal University-->
+                <p class="register"><a href="register.html#register">Register</a></p>
+                <!--may add a function that autosearches the course being clicked
+                    after directing to register.html-->
+                <p class="prereq"><em>Prerequisite(s):</em> GNED 1301</p>
+            </div>
+        </li>
+
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

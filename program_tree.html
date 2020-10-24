@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Joel Conley">
+    <meta name="created" content="Thu, 09 Jul 2020">
+    <meta name="updated" content="Mon, 13 Jul 2020">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="language" content="en" />
+    <meta name="description" content="An Athabasca University student web 
+    development project">
+    <meta name="keywords" content="university, school, computer, programming,
+    web" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type=text/css href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/monster_m.png" type="image/gif" sizes="16x16">
+    <title>Program Tree</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <span class="top">
+                <a href="index.html">
+                    <img class="logo" alt="Monstersorri University logo" src="images/monster_m.png" width="75" height="75">
+                </a>            </span>
+            <span class="top">
+                <ul class="navbar" id="navlist">
+                    <li>
+                            <a href="programs_courses.html#programs_and_courses">Programs & 
+                                Courses</a>
+                    </li>
+                    <li>
+                            <a href="my_courses.html#calendar">My Courses</a>
+                    </li>
+                    <li>
+                            <a href="register.html#register">Register for Courses</a>
+                    </li>
+                    <li>
+                            <a href="mailto:jconl266@mtroyal.ca?subject=Student Advising - Monstersorri University">Contact</a>
+                    </li>
+                    <form>
+                        <input id="student_id" name="Student ID" type="text" placeholder="Student ID" />
+                        <input id="student_password" type="password" name="Student 
+                        Password" placeholder="Password" />
+                        <input id="login_btn" type="button" onclick="login()" value="Login" />
+                    </form>
+                </ul>
+            </span>
+        </div>
+        <div class="banner">
+            <img alt="Welcome to Monstersorri University! Explore your 
+                future!" src="images/banner.png" class="banner" />
+
+        </div>
+    </header>
+    <h2>Degree Planner</h2>
+    <div class="legend">
+        <ul class="legend_list">
+            <li class="complete"> Completed Course</li>
+            <li class="registered"> Registered Course</li>
+            <li class="unlocked"> Unlocked Course</li>
+            <li class="locked"> Locked Course</li>
+            <!-- <li><span id="option">&#x25C7</span> Option Course</li> -->
+        </ul>
+    </div>
+    <div class="select_program">
+        <form>
+            <label for="degree_program">Select a Program:</label>
+            <select name="degree_program" id="degree_program" size="1">
+                <option value="BCIS" >Computer Information Systems</option>
+                <option value="BAP" >Bachelor of Arts: Philosophy (coming soon)</option>
+                <!--Unsure if I will code a page for this menu option as it would
+                be a lot of additional database work for a redundant display of skills-->
+                <!-- <input class="view_btn" type="submit" value="View"> -->
+            </select>
+        </form>
+    </div>
+
+    <div id="program_chart"></div>
+
+    <div class="senior_options">
+        <!--divs of class"course_row_x" will be unhidden with javascript when
+            the"View" button is clicked-->
+        <span>
+                <form>
+                    <label for="option">Senior Options</label>
+                    <select class="option" name="senior_option" id="senior_option1">
+                        <option value="label" disabled="true" selected>Senior Option 1</option>
+                        <option value="gui">COMP 3551 - GUI Development</option>
+                        <option value="rob">COMP 3012 - Robotics</option>
+                        <option value="swe">COMP 3504 - Software Engineering</option>
+                        <option value="game">COMP 4555 - Game Development</option>
+                    </select> 
+                </form>
+                <form>
+                    <select class="option" name="senior_option" id="senior_option2">
+                        <option value="label" disabled="true" selected>Senior Option 2</option>
+                        <option value="gui">COMP 3551 - GUI Development</option>
+                        <option value="rob">COMP 3012 - Robotics</option>
+                        <option value="swe">COMP 3504 - Software Engineering</option>
+                        <option value="game">COMP 4555 - Game Development</option>
+                    </select> 
+                </form>
+                <form>
+                    <select class="option" name="senior_option" id="senior_option3">
+                        <option value="label" disabled="true" selected>Senior Option 3</option>
+                        <option value="gui">COMP 3551 - GUI Development</option>
+                        <option value="rob">COMP 3012 - Robotics</option>
+                        <option value="swe">COMP 3504 - Software Engineering</option>
+                        <option value="game">COMP 4555 - Game Development</option>
+                    </select> 
+                </form>
+        </span>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</html>
